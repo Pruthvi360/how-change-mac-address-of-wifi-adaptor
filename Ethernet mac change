@@ -1,0 +1,12 @@
+Check what is the MAC address of Ethernet interface.
+In search type CMD and type get or ipconfig /all
+Go to start
+Device manager
+Network adaptor
+Realtek PCIe Gbe Family Controller
+Go to Advance tab
+Select Network Address
+change the value (change the second digit either A or E)
+Go to Command prompt and check MAC address
+
+YOU COULD ABLE TO SEE CHANGED MAC ADDRESS.
