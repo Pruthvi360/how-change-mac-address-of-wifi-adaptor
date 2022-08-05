@@ -1,0 +1,26 @@
+Check the MAc address of the WIFI Adaptor mac address in the CMD command: getmac or ipconfig /all
+Go to start and settings
+search for device manager 
+Select Network adaptors
+Select Wifi Realtek 8821CE wireless LAN 802.11ac PIC-E NIC
+Go to Advance
+Select Network Address ( If you do not find this we have to try second method)
+
+BE CAREFULL WHILE CHANGING ANY VALUES IN REGISTORY
+
+Go to Search and type Registry Editor.
+Go to this path Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class
+Go to Command prompt and type get mac
+1A-13-33-A7-3C-AB   \Device\Tcpip_{5B36FAF1-2BB3-427C-9DA7-9A21383F7402}
+Copy the 5B36FAF1 and type Crt f paste it and click on search.
+It will take you to Netcfginstanceid 5B36FAF1-2BB3-427C-9DA7-9A21383F7402
+Right click and select new and string value.
+Name the new file as Network Address
+Right click on that file and click on Modify
+Enter the value of the New MAC address (1A1333A73CAB Note: No "-" symbol in betweeen and 12 digit numbers and change second value either by A or E if fails to change)
+Go to Network and sharing center
+select wifi adaptor disable it and enable the adaptor.
+Go to the Command prompt and type getmac ( Mac address will be changed)
+
+THIS COMPLETES THE MAC ADDRESS CHANGE 
+ALL THE BEST HAPPY LEARNING
